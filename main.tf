@@ -26,7 +26,7 @@ provider "aws" {
 }
 
 
-
+#add some comment
 resource "random_pet" "sg" {}
 
 resource "aws_instance" "web" {
