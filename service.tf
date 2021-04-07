@@ -10,4 +10,7 @@ resource "aws_ecs_service" "test-ecs-service" {
     container_port   = 80
     container_name   = "nginx"
   }
+
+  depends_on = ["aws_alb_target_group.ecs-target-group"]
+
 }
